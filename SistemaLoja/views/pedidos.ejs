@@ -1,0 +1,33 @@
+<%- include ('partials/header.ejs')%>
+<%- include ('partials/navbar.ejs')%>
+
+<div class="fundo2"> 
+    <div class="tabela">
+        <div class="container mt-4">
+            <table class="table table-striped table-dark table-hover table-bordered table-responsive table-sm">
+                <thead>
+                    <tr>
+                        <th class="header-cell" scope="col"></th>
+                        <th class="header-cell" scope="col">Numero Produto</th>
+                        <th class="header-cell" scope="col">Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% pedido.forEach(function(pedidos){%>
+                        <tr>
+                            <td><img src="img/order2.png" width="30px"></td>
+                            <td>
+                                <%= pedidos.numero %>
+                            </td>
+                            <td>
+                                <%= pedidos.valor.toLocaleString('pt-br', {style: 'currency' , currency: 'BRL' }) %>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+<%- include ('partials/footer.ejs')%>

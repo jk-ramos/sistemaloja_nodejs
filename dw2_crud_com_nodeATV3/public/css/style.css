@@ -1,0 +1,26 @@
+.bgg {
+    background-color: rgb(255, 0, 119);
+}
+
+body {
+    background-color: #baa0a0;
+}
+
+ul {
+    list-style: square;
+    line-height: 30px;
+}
+
+a {
+    color:#590028;
+    text-decoration: none;
+    padding: 20px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+footer {
+    text-align: center;    
+}
